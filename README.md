@@ -64,6 +64,7 @@ python test.py  --name paris --checkpoints_dir ./checkpoints/checkpoint_paris --
 ## Example Results
 - **Comparison results of softmax-based attention and our proposed Spa-attention**
 ![](https://github.com/huangwenwenlili/spa-former/blob/main/images/spa-intr.png)
+
 (a) Attention values were computed for one feature channel using the softmax and ReLU functions. We found that the ReLU function generated attention values that were more focused on essential contexts, compared to the dense attention values obtained from the softmax function. 
 
 (b) We compared the inpainting results obtained using these two attention mechanisms. Our Spa-attention approach yielded superior results, as indicated by the improved completion of the building window in the Spa-attention completion image, and the smaller FID value obtained by this method. Lower values of FID are indicative of better performance
