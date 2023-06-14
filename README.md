@@ -8,8 +8,6 @@ This is the code for Sparse Self-Attention Transformer (Spa-former) to reconstru
 ## Illustration of Spa-former
 ![](https://github.com/huangwenwenlili/spa-former/blob/main/images/spa-former-architecture.png)
 
-Learning-based image inpainting methods have made remarkable progress in recent years. Nevertheless, these methods still suffer from issues such as blurring, artifacts, and inconsistent contents. The use of vanilla convolution kernels, which have limited perceptual fields and spatially invariant kernel coefficients, is one of the main causes for these problems. In contrast, the multi-headed attention in the transformer can effectively model non-local relations among input features by generating adaptive attention scores. Therfore, this paper explores the feasibility of employing the transformer model for the image inpainting task. However, the multi-headed attention transformer blocks pose a significant challenge due to their overwhelming computational cost. To address this issue, we propose a novel U-Net style transformer-based network for the inpainting task, called the sparse self-attention transformer (Spa-former). The Spa-former retains the long-range modeling capacity of transformer blocks while reducing the computational burden. It incorporates a new channel attention approximation algorithm that reduces attention calculation to linear complexity. Additionally, it replaces the canonical softmax function with the ReLU function to generate a sparse attention map that effectively excludes irrelevant features. As a result, the Spa-former achieves effective long-range feature modeling with fewer parameters and lower computational resources. Our empirical results on challenging benchmarks demonstrate the superior performance of our proposed Spa-former over state-of-the-art approaches.
-
 
 
 # Getting started
@@ -65,9 +63,7 @@ python test.py  --name paris --checkpoints_dir ./checkpoints/checkpoint_paris --
 - **Comparison results of softmax-based attention and our proposed Spa-attention**
 ![](https://github.com/huangwenwenlili/spa-former/blob/main/images/spa-intr.png)
 
-(a) Attention values were computed for one feature channel using the softmax and ReLU functions. We found that the ReLU function generated attention values that were more focused on essential contexts, compared to the dense attention values obtained from the softmax function. 
 
-(b) We compared the inpainting results obtained using these two attention mechanisms. Our Spa-attention approach yielded superior results, as indicated by the improved completion of the building window in the Spa-attention completion image, and the smaller FID value obtained by this method. Lower values of FID are indicative of better performance
 
 ## License
 <br />
