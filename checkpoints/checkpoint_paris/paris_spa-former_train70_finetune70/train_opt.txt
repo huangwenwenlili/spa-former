@@ -1,0 +1,45 @@
+--------------Options--------------
+batchSize: 4
+beta1: 0.5
+beta2: 0.9
+checkpoints_dir: ./checkpoints/checkpoint_paris
+continue_train: False
+display_freq: 100
+display_id: 4
+display_port: 8097
+display_single_pane_ncols: 0
+display_winsize: 256
+fineSize: [256, 256]
+gan_mode: lsgan
+gpu_ids: 0
+img_file: /home/hwl/hwl/datasets/paris/paris_train_original/
+isTrain: True
+iter_count: 1
+lambda_g: 0.1
+lambda_l1: 1
+lambda_per: 1
+lambda_sty: 250
+loadSize: [266, 266]
+lr: 0.0001
+lr_policy: lambda
+mask_file: /data/dy/data/test_mask/1
+mask_type: [2, 4]
+model: pluralistic
+nThreads: 6
+name: paris_spa-former_train70_finetune70
+niter: 261000
+niter_decay: 0
+no_augment: True
+no_flip: True
+no_html: False
+no_rotation: True
+no_shuffle: False
+output_scale: 4
+print_freq: 100
+resize_or_crop: resize_and_crop
+save_iters_freq: 10000
+save_latest_freq: 1000
+train_paths: two
+weight_decay: 0.0
+which_iter: latest
+----------------End----------------
