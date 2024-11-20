@@ -59,6 +59,7 @@ python test.py  --name paris --checkpoints_dir ./checkpoints/checkpoint_paris --
 ```
 - Set ```--mask_type``` in options/base_options.py to test various masks. ```--mask_file``` path is needed for **3. external irregular mask**,
 - The default results will be saved under the *results* folder. Set ```--results_dir``` for a new path to save the result.
+- checkpooints [Baidu disk](https://pan.baidu.com/s/1Ace1zD_lUg-_KW7v_aVAOg?pwd=neg1)
 
 
 ## Example Results
